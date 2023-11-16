@@ -19,8 +19,12 @@ public class FindDuplicateElementsFromListUsingStreams {
         We want which are duplicate among these integers.
         By checking if these elements arte not set, we will get Duplicates 10, 28, 80, 80
         80 it is counting twice, for that, we need to collect it in set.*/
-        list.stream().filter(f -> !set.add(f))
+      /*  list.stream().filter(f -> !set.add(f))
                 .collect(Collectors.toSet())
-                .forEach(System.out::println);
+                .forEach(System.out::println);*/
+
+        list.stream().filter(x -> !set.add(x)).collect(Collectors.toSet()).forEach(System.out::println);
     }
+
+
 }

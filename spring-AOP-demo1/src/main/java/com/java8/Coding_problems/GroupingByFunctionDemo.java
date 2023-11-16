@@ -24,9 +24,9 @@ public class GroupingByFunctionDemo {
 
 
         // group all the employees who are having same age.
-        /*Map<Integer, List<Employee>> groupByAge = employeeList.stream()
+        Map<Integer, List<Employee>> groupByAge = employeeList.stream()
                 .collect(Collectors.groupingBy(age -> age.getAge()));
-        System.out.println(groupByAge);*/
+        System.out.println(groupByAge);
     }
 
 }
